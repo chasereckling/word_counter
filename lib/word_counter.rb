@@ -1,17 +1,16 @@
 class String
 
-  define_method(:word_counter) do |input_word|
-    input_string = self.downcase()
-    input_word = input_word.downcase()
-    split_string = input_string.split()
-    count_string = []
-    word_count = ''
+  define_method(:word_counter) do |word_input|
+    word_input = word_input.downcase()
+    sentence_input = self.downcase().split()
+    word_list = []
+    word_count = 0
 
-    split_string.each() do |word|
-     if word.include?(input_word)
-    count_string = count_string.push(input_word)
+    sentence_input.each() do |word|
+    if word.include?(word_input)
+      word_list = word_list.push(word_input)
     end
-    word_count = count_string.count()
+    word_count = word_list.count()
     end
     word_count
   end

@@ -18,5 +18,5 @@ require('pry')
     end
     it('display the number 0 if the sentence includes no instances of the given input') do
      expect(("my cat is a black cat").word_counter("dog")).to(eq(0))
-   end
+    end
   end
