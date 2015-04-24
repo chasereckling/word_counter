@@ -14,6 +14,6 @@ require('pry')
      expect(("my cat is a black cat").word_counter("cat")).to(eq(["cat", "cat"]))
     end
     it('count number of instances the given input word occurs in the new array') do
-     expect(("my cat is a black cat").word_counter("cat")).to(eq('2'))
+     expect(("my cat is a black cat").word_counter("cat")).to(eq(2))
     end
  end
