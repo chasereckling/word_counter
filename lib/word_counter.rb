@@ -1,7 +1,8 @@
 class String
 
   define_method(:word_counter) do |input_word|
-    input_string = self
+    input_string = self.downcase()
+    input_word = input_word.downcase()
     split_string = input_string.split()
     count_string = []
     word_count = ''
